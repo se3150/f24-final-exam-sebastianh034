@@ -52,4 +52,4 @@ jobs:
           pip install pytest pytest-spec pytest-describe
 
       - name: Run Brute Tests
-        run: python -m pytest --spec test_brute.py -v
+        run: python -m pytest --spec test_brute.py 
