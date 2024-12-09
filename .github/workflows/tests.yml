@@ -34,7 +34,7 @@ jobs:
       - name: Run Behave Tests
         run: behave features/spy_messages.feature
 
-  Brute Tests:
+  Brute_Tests:
     runs-on: ubuntu-latest
 
     steps:
