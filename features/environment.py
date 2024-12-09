@@ -1,7 +1,9 @@
-import behave_webdriver
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 def before_all(context):
-    context.behave_driver = behave_webdriver.Chrome.headless()
+    context.driver = webdriver.Chrome(ChromeDriverManager().install())
+    context.driver.maximize_window()
 
 def after_all(context):
-    context.behave_driver.quit()
+    context.driver.quit()

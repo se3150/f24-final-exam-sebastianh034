@@ -9,10 +9,14 @@ def describe_Brute():
     def cracker():
         return Brute("TDD")
 
-    def describe_bruteOnce():
-        # write your test cases here
-        pass
+    def describe_bruteOnce(self, attempt)):
+        
+        assert 
 
     def describe_bruteMany():
         # write your test cases here
         pass
+
+
+
+        
