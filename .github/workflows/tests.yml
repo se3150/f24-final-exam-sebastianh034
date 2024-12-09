@@ -51,5 +51,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest pytest-describe
 
-      - name: Run Circle Tests
-        run: pytest circle_test.py
+      - name: Run Brute Tests
+        run: pytest test_brute.py
