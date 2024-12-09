@@ -10,9 +10,31 @@ Scenario: I input a new message
     Then I hit translate
     Then text should be "Test"
 
-Scenario: I input nothing
+Scenario: I select a shift ammount
     Given I am on the home page
     When I clear the letters
-    When I select the input and give nothing
+    Then I select a diffrent shift ammount
+    When I select the input prompt and input testing
     Then I hit translate
-    Then it should only be "Message After Shift"
+    Then result should be "Yjxy"
+
+Scenario: I decode a message
+    Given I am on the home page
+    Then I select a diffrent encoding
+    When I clear the letters
+    Then I select a diffrent shift ammount
+    When I select the input prompt and input testing
+    Then I hit translate
+    Then output should be "Ozno"
+
+Scenario: I input numbers
+    Given I am on the home page
+    When I clear the letters
+    Then I select a diffrent shift ammount
+    When I select the input prompt and input 1234
+    Then I hit translate
+    Then the number output be "1234"
+
+
+
+
